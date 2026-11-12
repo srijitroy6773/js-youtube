@@ -34,3 +34,31 @@ const myFunction = function (){
 
 
 console.log(typeof bigNumber);
+
+// https://262.ecma-international.org/5.1/#sec-11.4.3
+
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// Stack(Primitive), Heap(Non-Ptimitive)
+
+let myYoutubename = "srijitroydotcom"
+
+let anothername = myYoutubename
+anothername = "chaiaurcode"
+
+console.log(myYoutubename); 
+console.log(anothername);
+
+
+let userOne = {
+    email : "usergoogle.com",
+    upi : "useroaxis",
+}
+
+let userTwo = userOne 
+
+userTwo.email = "srijit@google.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
